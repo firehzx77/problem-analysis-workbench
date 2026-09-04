@@ -73,13 +73,13 @@ a {
   gap: 0;
   text-decoration: none;
   color: inherit;
-  min-width: 168px;
+  min-width: 220px;
 }
 
 .brand strong {
   font-family: var(--serif);
-  font-size: 18px;
-  letter-spacing: 0.08em;
+  font-size: 16px;
+  letter-spacing: 0.04em;
 }
 
 .brand span {

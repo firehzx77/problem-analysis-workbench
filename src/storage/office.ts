@@ -172,14 +172,14 @@ function pptxCore(title: string): string {
   return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cp:coreProperties xmlns:cp="http://schemas.openxmlformats.org/package/2006/metadata/core-properties" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dcmitype="http://purl.org/dc/dcmitype/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <dc:title>${xml(title)}</dc:title>
-  <dc:creator>三生工作台</dc:creator>
+  <dc:creator>问题分析与解决工作台</dc:creator>
 </cp:coreProperties>`;
 }
 
 function pptxApp(count: number): string {
   return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Properties xmlns="http://schemas.openxmlformats.org/officeDocument/2006/extended-properties">
-  <Application>三生工作台</Application>
+  <Application>问题分析与解决工作台</Application>
   <Slides>${count}</Slides>
 </Properties>`;
 }
@@ -232,9 +232,9 @@ const PPTX_MASTER = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </p:sldMaster>`;
 
 const PPTX_THEME = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<a:theme xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" name="Sansheng">
+<a:theme xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" name="Workbench">
   <a:themeElements>
-    <a:clrScheme name="Sansheng">
+    <a:clrScheme name="Workbench">
       <a:dk1><a:srgbClr val="1F1A12"/></a:dk1>
       <a:lt1><a:srgbClr val="F4EFE6"/></a:lt1>
       <a:dk2><a:srgbClr val="3D3426"/></a:dk2>
@@ -248,11 +248,11 @@ const PPTX_THEME = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
       <a:hlink><a:srgbClr val="8B1E1E"/></a:hlink>
       <a:folHlink><a:srgbClr val="6B5344"/></a:folHlink>
     </a:clrScheme>
-    <a:fontScheme name="Sansheng">
+    <a:fontScheme name="Workbench">
       <a:majorFont><a:latin typeface="Microsoft YaHei"/><a:ea typeface="Microsoft YaHei"/><a:cs typeface="Microsoft YaHei"/></a:majorFont>
       <a:minorFont><a:latin typeface="Microsoft YaHei"/><a:ea typeface="Microsoft YaHei"/><a:cs typeface="Microsoft YaHei"/></a:minorFont>
     </a:fontScheme>
-    <a:fmtScheme name="Sansheng">
+    <a:fmtScheme name="Workbench">
       <a:fillStyleLst><a:solidFill><a:schemeClr val="phClr"/></a:solidFill><a:solidFill><a:schemeClr val="phClr"/></a:solidFill><a:solidFill><a:schemeClr val="phClr"/></a:solidFill></a:fillStyleLst>
       <a:lnStyleLst>
         <a:ln w="12700"><a:solidFill><a:schemeClr val="phClr"/></a:solidFill><a:prstDash val="solid"/></a:ln>

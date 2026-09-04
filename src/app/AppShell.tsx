@@ -15,8 +15,8 @@ export function AppShell() {
     <div className="app-shell">
       <header className="topbar">
         <Link to="/" className="brand">
-          <strong>三生工作台</strong>
-          <span>问题分析与解决</span>
+          <strong>问题分析与解决工作台</strong>
+          <span>课程配套工具</span>
         </Link>
         {inWorkspace && current ? (
           <div className="topbar-title">{current.title}</div>
